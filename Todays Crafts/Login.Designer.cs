@@ -28,35 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uname = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.sign_in = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picuser = new System.Windows.Forms.PictureBox();
             this.picpass = new System.Windows.Forms.PictureBox();
-            this.password = new System.Windows.Forms.TextBox();
             this.exit = new System.Windows.Forms.Button();
+            this.uname = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picpass)).BeginInit();
             this.SuspendLayout();
-            // 
-            // uname
-            // 
-            this.uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
-            this.uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uname.ForeColor = System.Drawing.Color.White;
-            this.uname.HideSelection = false;
-            this.uname.Location = new System.Drawing.Point(100, 247);
-            this.uname.MaxLength = 20;
-            this.uname.Name = "uname";
-            this.uname.Size = new System.Drawing.Size(239, 17);
-            this.uname.TabIndex = 1;
-            this.uname.TabStop = false;
-            this.uname.Text = "Username";
-            this.uname.Click += new System.EventHandler(this.Uname_Click);
             // 
             // panel1
             // 
@@ -85,7 +69,7 @@
             this.sign_in.Location = new System.Drawing.Point(70, 338);
             this.sign_in.Name = "sign_in";
             this.sign_in.Size = new System.Drawing.Size(269, 39);
-            this.sign_in.TabIndex = 3;
+            this.sign_in.TabIndex = 10;
             this.sign_in.Text = "Sign In";
             this.sign_in.UseVisualStyleBackColor = false;
             this.sign_in.Click += new System.EventHandler(this.sign_in_Click);
@@ -121,22 +105,6 @@
             this.picpass.TabIndex = 9;
             this.picpass.TabStop = false;
             // 
-            // password
-            // 
-            this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
-            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.ForeColor = System.Drawing.Color.White;
-            this.password.HideSelection = false;
-            this.password.Location = new System.Drawing.Point(100, 291);
-            this.password.MaxLength = 20;
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(239, 17);
-            this.password.TabIndex = 2;
-            this.password.TabStop = false;
-            this.password.Text = "Password";
-            this.password.Click += new System.EventHandler(this.password_Click);
-            // 
             // exit
             // 
             this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
@@ -148,10 +116,32 @@
             this.exit.Location = new System.Drawing.Point(389, 1);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(20, 20);
-            this.exit.TabIndex = 5;
+            this.exit.TabIndex = 11;
             this.exit.Text = "X";
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // uname
+            // 
+            this.uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
+            this.uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uname.Font = new System.Drawing.Font("Roboto", 9F);
+            this.uname.ForeColor = System.Drawing.Color.White;
+            this.uname.Location = new System.Drawing.Point(101, 247);
+            this.uname.Name = "uname";
+            this.uname.Size = new System.Drawing.Size(238, 16);
+            this.uname.TabIndex = 12;
+            // 
+            // password
+            // 
+            this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
+            this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password.Font = new System.Drawing.Font("Roboto", 9F);
+            this.password.ForeColor = System.Drawing.Color.White;
+            this.password.Location = new System.Drawing.Point(101, 292);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(238, 16);
+            this.password.TabIndex = 13;
             // 
             // Login
             // 
@@ -159,13 +149,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(409, 534);
-            this.Controls.Add(this.exit);
             this.Controls.Add(this.password);
+            this.Controls.Add(this.uname);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.picpass);
             this.Controls.Add(this.sign_in);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.uname);
             this.Controls.Add(this.picuser);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -186,13 +176,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox uname;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button sign_in;
         private System.Windows.Forms.PictureBox picuser;
         private System.Windows.Forms.PictureBox picpass;
-        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.TextBox uname;
+        private System.Windows.Forms.TextBox password;
     }
 }

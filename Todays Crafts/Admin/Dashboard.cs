@@ -17,8 +17,6 @@ namespace Todays_Crafts
         public Dashboard(string status)
         {
             InitializeComponent();
-            sidepanel.Height = homebtn.Height;
-            sidepanel.Top = homebtn.Top;
             lblstatus.Text = status;
             
         }
@@ -33,8 +31,6 @@ namespace Todays_Crafts
 
         private void purchasebtn_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = purchasebtn.Height;
-            sidepanel.Top = purchasebtn.Top;
             purchasecontrol1.BringToFront();
             homebtn.BackColor = Color.FromArgb(58, 69, 88);
             inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
@@ -45,8 +41,6 @@ namespace Todays_Crafts
 
         private void inventorybtn_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = inventorybtn.Height;
-            sidepanel.Top = inventorybtn.Top;
             inventorycontrol2.BringToFront();
             homebtn.BackColor = Color.FromArgb(58, 69, 88);
             inventorybtn.BackColor = Color.FromArgb(255,190,190);
@@ -57,8 +51,6 @@ namespace Todays_Crafts
 
         private void infobtn_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = infobtn.Height;
-            sidepanel.Top = infobtn.Top;
             infocontrol2.BringToFront();
             homebtn.BackColor = Color.FromArgb(58, 69, 88);
             inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
@@ -69,8 +61,6 @@ namespace Todays_Crafts
 
         private void employeebtn_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = frmSettings1.Height;
-            sidepanel.Top = frmSettings1.Top;
             employeecontrol2.BringToFront();
             homebtn.BackColor = Color.FromArgb(58, 69, 88);
             inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
@@ -83,8 +73,6 @@ namespace Todays_Crafts
 
         private void homebtn_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = homebtn.Height;
-            sidepanel.Top = homebtn.Top;
             homecontrol3.BringToFront();
             homebtn.BackColor = Color.FromArgb(238, 96, 138);
             inventorybtn.BackColor = Color.FromArgb(58, 69, 88);

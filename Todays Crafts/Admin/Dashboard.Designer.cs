@@ -41,7 +41,6 @@
             this.employeebtn = new System.Windows.Forms.Button();
             this.purchasebtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
-            this.sidepanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -105,7 +104,6 @@
             this.panel2.Controls.Add(this.employeebtn);
             this.panel2.Controls.Add(this.purchasebtn);
             this.panel2.Controls.Add(this.inventorybtn);
-            this.panel2.Controls.Add(this.sidepanel);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -124,9 +122,9 @@
             this.homebtn.ForeColor = System.Drawing.SystemColors.Control;
             this.homebtn.Image = global::Todays_Crafts.Properties.Resources.home;
             this.homebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtn.Location = new System.Drawing.Point(18, 174);
+            this.homebtn.Location = new System.Drawing.Point(3, 174);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(257, 73);
+            this.homebtn.Size = new System.Drawing.Size(272, 73);
             this.homebtn.TabIndex = 14;
             this.homebtn.Text = "       Home";
             this.homebtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -142,9 +140,9 @@
             this.infobtn.ForeColor = System.Drawing.SystemColors.Control;
             this.infobtn.Image = global::Todays_Crafts.Properties.Resources.infos;
             this.infobtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infobtn.Location = new System.Drawing.Point(18, 396);
+            this.infobtn.Location = new System.Drawing.Point(3, 396);
             this.infobtn.Name = "infobtn";
-            this.infobtn.Size = new System.Drawing.Size(257, 73);
+            this.infobtn.Size = new System.Drawing.Size(272, 73);
             this.infobtn.TabIndex = 13;
             this.infobtn.Text = "       Customer Info";
             this.infobtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -171,9 +169,9 @@
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Image = global::Todays_Crafts.Properties.Resources.employee1;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(18, 618);
+            this.button3.Location = new System.Drawing.Point(3, 618);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(257, 73);
+            this.button3.Size = new System.Drawing.Size(272, 73);
             this.button3.TabIndex = 12;
             this.button3.Text = "       Settings";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -189,9 +187,9 @@
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Image = global::Todays_Crafts.Properties.Resources.employee1;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(18, 544);
+            this.button2.Location = new System.Drawing.Point(3, 544);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(257, 73);
+            this.button2.Size = new System.Drawing.Size(272, 73);
             this.button2.TabIndex = 12;
             this.button2.Text = "       Job Order";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -207,9 +205,9 @@
             this.employeebtn.ForeColor = System.Drawing.SystemColors.Control;
             this.employeebtn.Image = global::Todays_Crafts.Properties.Resources.employee1;
             this.employeebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.employeebtn.Location = new System.Drawing.Point(18, 470);
+            this.employeebtn.Location = new System.Drawing.Point(3, 470);
             this.employeebtn.Name = "employeebtn";
-            this.employeebtn.Size = new System.Drawing.Size(257, 73);
+            this.employeebtn.Size = new System.Drawing.Size(272, 73);
             this.employeebtn.TabIndex = 12;
             this.employeebtn.Text = "       Employee";
             this.employeebtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -225,9 +223,9 @@
             this.purchasebtn.ForeColor = System.Drawing.SystemColors.Control;
             this.purchasebtn.Image = global::Todays_Crafts.Properties.Resources.purchase;
             this.purchasebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.purchasebtn.Location = new System.Drawing.Point(18, 322);
+            this.purchasebtn.Location = new System.Drawing.Point(3, 322);
             this.purchasebtn.Name = "purchasebtn";
-            this.purchasebtn.Size = new System.Drawing.Size(257, 73);
+            this.purchasebtn.Size = new System.Drawing.Size(272, 73);
             this.purchasebtn.TabIndex = 11;
             this.purchasebtn.Text = "       Purchase Order";
             this.purchasebtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -243,22 +241,14 @@
             this.inventorybtn.ForeColor = System.Drawing.SystemColors.Control;
             this.inventorybtn.Image = global::Todays_Crafts.Properties.Resources.inventory;
             this.inventorybtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inventorybtn.Location = new System.Drawing.Point(18, 248);
+            this.inventorybtn.Location = new System.Drawing.Point(3, 248);
             this.inventorybtn.Name = "inventorybtn";
-            this.inventorybtn.Size = new System.Drawing.Size(257, 73);
+            this.inventorybtn.Size = new System.Drawing.Size(272, 73);
             this.inventorybtn.TabIndex = 10;
             this.inventorybtn.Text = "       Inventory";
             this.inventorybtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.inventorybtn.UseVisualStyleBackColor = false;
             this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
-            // 
-            // sidepanel
-            // 
-            this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(169)))), ((int)(((byte)(250)))));
-            this.sidepanel.Location = new System.Drawing.Point(1, 174);
-            this.sidepanel.Name = "sidepanel";
-            this.sidepanel.Size = new System.Drawing.Size(18, 73);
-            this.sidepanel.TabIndex = 8;
             // 
             // panel3
             // 
@@ -558,7 +548,6 @@
         //private infocontrol infocontrol1;
         //private inventorycontrol inventorycontrol1;
         private homecontrol homecontrol1;
-        private System.Windows.Forms.Panel sidepanel;
         private employeecontrol employeecontrol1;
         private infocontrol infocontrol2;
         private inventorycontrol inventorycontrol2;
