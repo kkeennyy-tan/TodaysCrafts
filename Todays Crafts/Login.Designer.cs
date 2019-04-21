@@ -37,6 +37,9 @@
             this.exit = new System.Windows.Forms.Button();
             this.uname = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picpass)).BeginInit();
@@ -84,6 +87,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // picuser
             // 
@@ -125,23 +131,54 @@
             // 
             this.uname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uname.Font = new System.Drawing.Font("Roboto", 9F);
+            this.uname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.uname.ForeColor = System.Drawing.Color.White;
             this.uname.Location = new System.Drawing.Point(101, 247);
             this.uname.Name = "uname";
-            this.uname.Size = new System.Drawing.Size(238, 16);
+            this.uname.Size = new System.Drawing.Size(238, 14);
             this.uname.TabIndex = 12;
             // 
             // password
             // 
             this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password.Font = new System.Drawing.Font("Roboto", 9F);
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.password.ForeColor = System.Drawing.Color.White;
             this.password.Location = new System.Drawing.Point(101, 292);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(238, 16);
+            this.password.Size = new System.Drawing.Size(238, 14);
             this.password.TabIndex = 13;
+            this.password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_KeyDown);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(285, 416);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(93, 13);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "modify connection";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 416);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "server";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(113, 416);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "connected";
             // 
             // Login
             // 
@@ -149,6 +186,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(409, 534);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.uname);
             this.Controls.Add(this.exit);
@@ -165,6 +205,9 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Login_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picpass)).EndInit();
@@ -184,5 +227,8 @@
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.TextBox uname;
         private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

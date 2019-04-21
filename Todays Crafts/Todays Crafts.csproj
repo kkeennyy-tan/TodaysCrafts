@@ -156,7 +156,6 @@
     <Compile Include="Admin\systemSettings.Designer.cs">
       <DependentUpon>systemSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\db.cs" />
     <Compile Include="Class\dbclass.cs" />
     <Compile Include="Admin\Dashboard.cs">
       <SubType>Form</SubType>
@@ -213,6 +212,48 @@
     </Compile>
     <Compile Include="Admin\inventorycontrol.Designer.cs">
       <DependentUpon>inventorycontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\background1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\background1.Designer.cs">
+      <DependentUpon>background1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\fan_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\fan_inventory.Designer.cs">
+      <DependentUpon>fan_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\lanyard_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\lanyard_inventory.Designer.cs">
+      <DependentUpon>lanyard_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\mug_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\mug_inventory.Designer.cs">
+      <DependentUpon>mug_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\pen_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\pen_inventory.Designer.cs">
+      <DependentUpon>pen_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\plate_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\plate_inventory.Designer.cs">
+      <DependentUpon>plate_inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\tshirt_inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventory\tshirt_inventory.Designer.cs">
+      <DependentUpon>tshirt_inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -333,6 +374,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\inventorycontrol.resx">
       <DependentUpon>inventorycontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\background1.resx">
+      <DependentUpon>background1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\fan_inventory.resx">
+      <DependentUpon>fan_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\lanyard_inventory.resx">
+      <DependentUpon>lanyard_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\mug_inventory.resx">
+      <DependentUpon>mug_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\pen_inventory.resx">
+      <DependentUpon>pen_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\plate_inventory.resx">
+      <DependentUpon>plate_inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\tshirt_inventory.resx">
+      <DependentUpon>tshirt_inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

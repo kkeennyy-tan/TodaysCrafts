@@ -44,7 +44,6 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -84,10 +83,10 @@
             // 
             this.txtDatabase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtDatabase.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDatabase.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDatabase.Location = new System.Drawing.Point(164, 191);
             this.txtDatabase.Name = "txtDatabase";
-            this.txtDatabase.Size = new System.Drawing.Size(269, 22);
+            this.txtDatabase.Size = new System.Drawing.Size(269, 19);
             this.txtDatabase.TabIndex = 3;
             // 
             // panel2
@@ -111,20 +110,20 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtUsername.Location = new System.Drawing.Point(164, 230);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(269, 22);
+            this.txtUsername.Size = new System.Drawing.Size(269, 19);
             this.txtUsername.TabIndex = 4;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPassword.Location = new System.Drawing.Point(164, 269);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(269, 22);
+            this.txtPassword.Size = new System.Drawing.Size(269, 19);
             this.txtPassword.TabIndex = 5;
             // 
             // panel5
@@ -193,9 +192,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(96)))), ((int)(((byte)(138)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Roboto", 8F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(239, 361);
+            this.button1.Location = new System.Drawing.Point(348, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 27);
             this.button1.TabIndex = 7;
@@ -206,11 +205,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(110, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(290, 32);
+            this.label5.Size = new System.Drawing.Size(309, 29);
             this.label5.TabIndex = 14;
             this.label5.Text = "DATABASE CONNECTION";
             // 
@@ -236,7 +235,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Roboto", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Image = global::Todays_Crafts.Properties.Resources.shutdown;
             this.button5.Location = new System.Drawing.Point(444, 1);
@@ -245,19 +244,6 @@
             this.button5.TabIndex = 9;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Roboto", 8F);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(348, 361);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 27);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
@@ -308,10 +294,10 @@
             // 
             this.txtPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPort.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPort.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPort.Location = new System.Drawing.Point(164, 308);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(269, 22);
+            this.txtPort.Size = new System.Drawing.Size(269, 19);
             this.txtPort.TabIndex = 6;
             // 
             // panel15
@@ -352,10 +338,10 @@
             // 
             this.txtHost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtHost.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHost.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtHost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtHost.Location = new System.Drawing.Point(164, 152);
             this.txtHost.Name = "txtHost";
-            this.txtHost.Size = new System.Drawing.Size(269, 22);
+            this.txtHost.Size = new System.Drawing.Size(269, 19);
             this.txtHost.TabIndex = 2;
             // 
             // lblPath
@@ -368,7 +354,6 @@
             this.lblPath.Size = new System.Drawing.Size(55, 20);
             this.lblPath.TabIndex = 24;
             this.lblPath.Text = "Path   :";
-            this.lblPath.Click += new System.EventHandler(this.lblPath_Click);
             // 
             // panel19
             // 
@@ -442,18 +427,17 @@
             // 
             this.txtPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPath.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPath.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPath.Location = new System.Drawing.Point(164, 113);
             this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(219, 22);
+            this.txtPath.Size = new System.Drawing.Size(219, 19);
             this.txtPath.TabIndex = 1;
             this.txtPath.Text = "No path chosen";
-            this.txtPath.TextChanged += new System.EventHandler(this.txtPath_TextChanged);
             // 
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Roboto", 6F);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(389, 113);
             this.button3.Name = "button3";
@@ -483,7 +467,6 @@
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.label5);
@@ -502,6 +485,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAppConfig";
             this.Load += new System.EventHandler(this.FrmAppConfig_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmAppConfig_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmAppConfig_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FrmAppConfig_MouseUp);
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -536,7 +522,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;

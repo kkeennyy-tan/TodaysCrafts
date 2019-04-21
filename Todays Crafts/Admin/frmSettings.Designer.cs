@@ -32,9 +32,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.cashadvanceSettings1 = new Todays_Crafts.Admin.cashadvanceSettings();
-            this.salesSettings1 = new Todays_Crafts.Admin.salesSettings();
+            this.pricelistSettings2 = new Todays_Crafts.Admin.pricelistSettings();
+            this.systemSettings1 = new Todays_Crafts.Admin.systemSettings();
             this.pricelistSettings1 = new Todays_Crafts.Admin.pricelistSettings();
+            this.salesSettings1 = new Todays_Crafts.Admin.salesSettings();
+            this.cashadvanceSettings1 = new Todays_Crafts.Admin.cashadvanceSettings();
             this.SuspendLayout();
             // 
             // button1
@@ -77,19 +79,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // cashadvanceSettings1
+            // pricelistSettings2
             // 
-            this.cashadvanceSettings1.Location = new System.Drawing.Point(0, 45);
-            this.cashadvanceSettings1.Name = "cashadvanceSettings1";
-            this.cashadvanceSettings1.Size = new System.Drawing.Size(1043, 572);
-            this.cashadvanceSettings1.TabIndex = 4;
+            this.pricelistSettings2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.pricelistSettings2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelistSettings2.Location = new System.Drawing.Point(0, 45);
+            this.pricelistSettings2.Margin = new System.Windows.Forms.Padding(6);
+            this.pricelistSettings2.Name = "pricelistSettings2";
+            this.pricelistSettings2.Size = new System.Drawing.Size(1025, 572);
+            this.pricelistSettings2.TabIndex = 8;
             // 
-            // salesSettings1
+            // systemSettings1
             // 
-            this.salesSettings1.Location = new System.Drawing.Point(0, 45);
-            this.salesSettings1.Name = "salesSettings1";
-            this.salesSettings1.Size = new System.Drawing.Size(1025, 572);
-            this.salesSettings1.TabIndex = 5;
+            this.systemSettings1.Location = new System.Drawing.Point(0, 45);
+            this.systemSettings1.Name = "systemSettings1";
+            this.systemSettings1.Size = new System.Drawing.Size(1025, 572);
+            this.systemSettings1.TabIndex = 7;
             // 
             // pricelistSettings1
             // 
@@ -102,11 +107,27 @@
             this.pricelistSettings1.TabIndex = 6;
             this.pricelistSettings1.Load += new System.EventHandler(this.pricelistSettings1_Load_1);
             // 
+            // salesSettings1
+            // 
+            this.salesSettings1.Location = new System.Drawing.Point(0, 45);
+            this.salesSettings1.Name = "salesSettings1";
+            this.salesSettings1.Size = new System.Drawing.Size(1025, 572);
+            this.salesSettings1.TabIndex = 5;
+            // 
+            // cashadvanceSettings1
+            // 
+            this.cashadvanceSettings1.Location = new System.Drawing.Point(0, 45);
+            this.cashadvanceSettings1.Name = "cashadvanceSettings1";
+            this.cashadvanceSettings1.Size = new System.Drawing.Size(1043, 572);
+            this.cashadvanceSettings1.TabIndex = 4;
+            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.Controls.Add(this.pricelistSettings2);
+            this.Controls.Add(this.systemSettings1);
             this.Controls.Add(this.pricelistSettings1);
             this.Controls.Add(this.salesSettings1);
             this.Controls.Add(this.cashadvanceSettings1);
@@ -129,5 +150,7 @@
         private cashadvanceSettings cashadvanceSettings1;
         private salesSettings salesSettings1;
         private pricelistSettings pricelistSettings1;
+        private systemSettings systemSettings1;
+        private pricelistSettings pricelistSettings2;
     }
 }

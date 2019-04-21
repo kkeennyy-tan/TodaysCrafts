@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.settingsbtn = new System.Windows.Forms.Button();
+            this.joborderbtn = new System.Windows.Forms.Button();
             this.homebtn = new System.Windows.Forms.Button();
             this.infobtn = new System.Windows.Forms.Button();
             this.lblGreeting = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.employeebtn = new System.Windows.Forms.Button();
             this.purchasebtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
@@ -55,19 +55,20 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.homecontrol3 = new Todays_Crafts.homecontrol();
+            this.frmJobOrder1 = new Todays_Crafts.Admin.frmJobOrder();
+            this.employeecontrol2 = new Todays_Crafts.employeecontrol();
+            this.homecontrol2 = new Todays_Crafts.homecontrol();
+            this.pricelistSettings1 = new Todays_Crafts.Admin.pricelistSettings();
+            this.salesSettings1 = new Todays_Crafts.Admin.salesSettings();
+            this.systemSettings1 = new Todays_Crafts.Admin.systemSettings();
+            this.cashadvanceSettings1 = new Todays_Crafts.Admin.cashadvanceSettings();
+            this.frmSettings1 = new Todays_Crafts.Admin.frmSettings();
             this.homecontrol1 = new Todays_Crafts.homecontrol();
             this.purchasecontrol1 = new Todays_Crafts.purchasecontrol();
             this.inventorycontrol2 = new Todays_Crafts.inventorycontrol();
             this.infocontrol2 = new Todays_Crafts.infocontrol();
             this.employeecontrol1 = new Todays_Crafts.employeecontrol();
-            this.frmSettings1 = new Todays_Crafts.Admin.frmSettings();
-            this.cashadvanceSettings1 = new Todays_Crafts.Admin.cashadvanceSettings();
-            this.systemSettings1 = new Todays_Crafts.Admin.systemSettings();
-            this.salesSettings1 = new Todays_Crafts.Admin.salesSettings();
-            this.pricelistSettings1 = new Todays_Crafts.Admin.pricelistSettings();
-            this.homecontrol2 = new Todays_Crafts.homecontrol();
-            this.employeecontrol2 = new Todays_Crafts.employeecontrol();
-            this.homecontrol3 = new Todays_Crafts.homecontrol();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.todaysCrafts)).BeginInit();
@@ -96,11 +97,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(88)))));
+            this.panel2.Controls.Add(this.settingsbtn);
+            this.panel2.Controls.Add(this.joborderbtn);
             this.panel2.Controls.Add(this.homebtn);
             this.panel2.Controls.Add(this.infobtn);
             this.panel2.Controls.Add(this.lblGreeting);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.employeebtn);
             this.panel2.Controls.Add(this.purchasebtn);
             this.panel2.Controls.Add(this.inventorybtn);
@@ -110,8 +111,42 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(275, 733);
+            this.panel2.Size = new System.Drawing.Size(275, 751);
             this.panel2.TabIndex = 5;
+            // 
+            // settingsbtn
+            // 
+            this.settingsbtn.FlatAppearance.BorderSize = 0;
+            this.settingsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsbtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.settingsbtn.Image = global::Todays_Crafts.Properties.Resources.employee1;
+            this.settingsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsbtn.Location = new System.Drawing.Point(3, 618);
+            this.settingsbtn.Name = "settingsbtn";
+            this.settingsbtn.Size = new System.Drawing.Size(272, 73);
+            this.settingsbtn.TabIndex = 31;
+            this.settingsbtn.Text = "              Settings";
+            this.settingsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsbtn.UseVisualStyleBackColor = true;
+            this.settingsbtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // joborderbtn
+            // 
+            this.joborderbtn.FlatAppearance.BorderSize = 0;
+            this.joborderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.joborderbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.joborderbtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.joborderbtn.Image = global::Todays_Crafts.Properties.Resources.employee1;
+            this.joborderbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.joborderbtn.Location = new System.Drawing.Point(3, 544);
+            this.joborderbtn.Name = "joborderbtn";
+            this.joborderbtn.Size = new System.Drawing.Size(272, 73);
+            this.joborderbtn.TabIndex = 29;
+            this.joborderbtn.Text = "       JobOrder";
+            this.joborderbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.joborderbtn.UseVisualStyleBackColor = true;
+            this.joborderbtn.Click += new System.EventHandler(this.joborderbtn_Click_1);
             // 
             // homebtn
             // 
@@ -160,48 +195,12 @@
             this.lblGreeting.TabIndex = 18;
             this.lblGreeting.Text = "Greeting";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(88)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Image = global::Todays_Crafts.Properties.Resources.employee1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 618);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(272, 73);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "       Settings";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.employeebtn_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(88)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Image = global::Todays_Crafts.Properties.Resources.employee1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 544);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 73);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "       Job Order";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.employeebtn_Click);
-            // 
             // employeebtn
             // 
             this.employeebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(88)))));
             this.employeebtn.FlatAppearance.BorderSize = 0;
             this.employeebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.employeebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.employeebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeebtn.ForeColor = System.Drawing.SystemColors.Control;
             this.employeebtn.Image = global::Todays_Crafts.Properties.Resources.employee1;
             this.employeebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -379,6 +378,81 @@
             // 
             this.employeeBindingSource.DataMember = "employee";
             // 
+            // homecontrol3
+            // 
+            this.homecontrol3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.homecontrol3.Location = new System.Drawing.Point(275, 174);
+            this.homecontrol3.Name = "homecontrol3";
+            this.homecontrol3.Size = new System.Drawing.Size(1025, 572);
+            this.homecontrol3.TabIndex = 30;
+            // 
+            // frmJobOrder1
+            // 
+            this.frmJobOrder1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.frmJobOrder1.Location = new System.Drawing.Point(275, 174);
+            this.frmJobOrder1.Name = "frmJobOrder1";
+            this.frmJobOrder1.Size = new System.Drawing.Size(1025, 572);
+            this.frmJobOrder1.TabIndex = 29;
+            // 
+            // employeecontrol2
+            // 
+            this.employeecontrol2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.employeecontrol2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.employeecontrol2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.employeecontrol2.ForeColor = System.Drawing.SystemColors.Control;
+            this.employeecontrol2.Location = new System.Drawing.Point(275, 174);
+            this.employeecontrol2.Name = "employeecontrol2";
+            this.employeecontrol2.Size = new System.Drawing.Size(1025, 572);
+            this.employeecontrol2.TabIndex = 27;
+            // 
+            // homecontrol2
+            // 
+            this.homecontrol2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.homecontrol2.Location = new System.Drawing.Point(275, 174);
+            this.homecontrol2.Name = "homecontrol2";
+            this.homecontrol2.Size = new System.Drawing.Size(1025, 572);
+            this.homecontrol2.TabIndex = 26;
+            this.homecontrol2.Load += new System.EventHandler(this.homecontrol2_Load);
+            // 
+            // pricelistSettings1
+            // 
+            this.pricelistSettings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.pricelistSettings1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelistSettings1.Location = new System.Drawing.Point(275, 248);
+            this.pricelistSettings1.Margin = new System.Windows.Forms.Padding(6);
+            this.pricelistSettings1.Name = "pricelistSettings1";
+            this.pricelistSettings1.Size = new System.Drawing.Size(798, 524);
+            this.pricelistSettings1.TabIndex = 25;
+            // 
+            // salesSettings1
+            // 
+            this.salesSettings1.Location = new System.Drawing.Point(275, 248);
+            this.salesSettings1.Name = "salesSettings1";
+            this.salesSettings1.Size = new System.Drawing.Size(814, 480);
+            this.salesSettings1.TabIndex = 24;
+            // 
+            // systemSettings1
+            // 
+            this.systemSettings1.Location = new System.Drawing.Point(275, 248);
+            this.systemSettings1.Name = "systemSettings1";
+            this.systemSettings1.Size = new System.Drawing.Size(805, 440);
+            this.systemSettings1.TabIndex = 23;
+            // 
+            // cashadvanceSettings1
+            // 
+            this.cashadvanceSettings1.Location = new System.Drawing.Point(275, 248);
+            this.cashadvanceSettings1.Name = "cashadvanceSettings1";
+            this.cashadvanceSettings1.Size = new System.Drawing.Size(817, 464);
+            this.cashadvanceSettings1.TabIndex = 22;
+            // 
+            // frmSettings1
+            // 
+            this.frmSettings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.frmSettings1.Location = new System.Drawing.Point(275, 174);
+            this.frmSettings1.Name = "frmSettings1";
+            this.frmSettings1.Size = new System.Drawing.Size(1025, 572);
+            this.frmSettings1.TabIndex = 21;
+            // 
             // homecontrol1
             // 
             this.homecontrol1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
@@ -422,80 +496,14 @@
             this.employeecontrol1.Size = new System.Drawing.Size(1025, 572);
             this.employeecontrol1.TabIndex = 7;
             // 
-            // frmSettings1
-            // 
-            this.frmSettings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
-            this.frmSettings1.Location = new System.Drawing.Point(275, 174);
-            this.frmSettings1.Name = "frmSettings1";
-            this.frmSettings1.Size = new System.Drawing.Size(1025, 572);
-            this.frmSettings1.TabIndex = 21;
-            // 
-            // cashadvanceSettings1
-            // 
-            this.cashadvanceSettings1.Location = new System.Drawing.Point(275, 248);
-            this.cashadvanceSettings1.Name = "cashadvanceSettings1";
-            this.cashadvanceSettings1.Size = new System.Drawing.Size(817, 464);
-            this.cashadvanceSettings1.TabIndex = 22;
-            // 
-            // systemSettings1
-            // 
-            this.systemSettings1.Location = new System.Drawing.Point(275, 248);
-            this.systemSettings1.Name = "systemSettings1";
-            this.systemSettings1.Size = new System.Drawing.Size(805, 440);
-            this.systemSettings1.TabIndex = 23;
-            // 
-            // salesSettings1
-            // 
-            this.salesSettings1.Location = new System.Drawing.Point(275, 248);
-            this.salesSettings1.Name = "salesSettings1";
-            this.salesSettings1.Size = new System.Drawing.Size(814, 480);
-            this.salesSettings1.TabIndex = 24;
-            // 
-            // pricelistSettings1
-            // 
-            this.pricelistSettings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
-            this.pricelistSettings1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricelistSettings1.Location = new System.Drawing.Point(275, 248);
-            this.pricelistSettings1.Margin = new System.Windows.Forms.Padding(6);
-            this.pricelistSettings1.Name = "pricelistSettings1";
-            this.pricelistSettings1.Size = new System.Drawing.Size(798, 524);
-            this.pricelistSettings1.TabIndex = 25;
-            // 
-            // homecontrol2
-            // 
-            this.homecontrol2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
-            this.homecontrol2.Location = new System.Drawing.Point(275, 174);
-            this.homecontrol2.Name = "homecontrol2";
-            this.homecontrol2.Size = new System.Drawing.Size(1025, 572);
-            this.homecontrol2.TabIndex = 26;
-            this.homecontrol2.Load += new System.EventHandler(this.homecontrol2_Load);
-            // 
-            // employeecontrol2
-            // 
-            this.employeecontrol2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
-            this.employeecontrol2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.employeecontrol2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.employeecontrol2.ForeColor = System.Drawing.SystemColors.Control;
-            this.employeecontrol2.Location = new System.Drawing.Point(275, 174);
-            this.employeecontrol2.Name = "employeecontrol2";
-            this.employeecontrol2.Size = new System.Drawing.Size(1025, 572);
-            this.employeecontrol2.TabIndex = 27;
-            // 
-            // homecontrol3
-            // 
-            this.homecontrol3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
-            this.homecontrol3.Location = new System.Drawing.Point(275, 174);
-            this.homecontrol3.Name = "homecontrol3";
-            this.homecontrol3.Size = new System.Drawing.Size(1025, 572);
-            this.homecontrol3.TabIndex = 28;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1300, 733);
+            this.ClientSize = new System.Drawing.Size(1300, 751);
             this.Controls.Add(this.homecontrol3);
+            this.Controls.Add(this.frmJobOrder1);
             this.Controls.Add(this.employeecontrol2);
             this.Controls.Add(this.homecontrol2);
             this.Controls.Add(this.pricelistSettings1);
@@ -517,6 +525,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseUp);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -559,8 +570,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private Admin.frmSettings frmSettings1;
         private Admin.cashadvanceSettings cashadvanceSettings1;
         private Admin.systemSettings systemSettings1;
@@ -568,6 +577,9 @@
         private Admin.pricelistSettings pricelistSettings1;
         private homecontrol homecontrol2;
         private employeecontrol employeecontrol2;
+        private System.Windows.Forms.Button joborderbtn;
+        private Admin.frmJobOrder frmJobOrder1;
         private homecontrol homecontrol3;
+        private System.Windows.Forms.Button settingsbtn;
     }
 }

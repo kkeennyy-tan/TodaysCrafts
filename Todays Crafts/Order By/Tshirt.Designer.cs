@@ -457,7 +457,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Tshirt";
-            this.Size = new System.Drawing.Size(532, 164);
+            this.Size = new System.Drawing.Size(583, 198);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();

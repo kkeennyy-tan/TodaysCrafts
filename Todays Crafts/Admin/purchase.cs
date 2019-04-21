@@ -73,7 +73,7 @@ namespace Todays_Crafts
         void shirt()
         {
             tshirt1.BringToFront();
-
+            
         }
         void lanyards()
         {
@@ -129,29 +129,31 @@ namespace Todays_Crafts
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (comboBox1.Text.Equals("tshirt")) tshirt();
+            /*if (comboBox1.Text.Equals("tshirt")) tshirt();
             if (comboBox1.Text.Equals("fan")) fan();
-            if (comboBox1.Text.Equals("lanyard")) lanyard();
+            if (comboBox1.Text.Equals("lanyard")) lanyard();*/
         }
         void tshirt()
         {
-            tshirt1.BringToFront();
+           // tshirt1.BringToFront();
         }
         void fan()
         {
-            fan1.BringToFront();
+            //fan1.BringToFront();
 
         }
         void lanyard()
         {
-            lanyard1.BringToFront();
+           // lanyard1.BringToFront();
             
 
-}
+        }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

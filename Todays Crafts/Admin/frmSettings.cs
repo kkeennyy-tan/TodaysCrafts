@@ -19,12 +19,12 @@ namespace Todays_Crafts.Admin
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            systemSettings1.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pricelistSettings1.BringToFront();
+            pricelistSettings2.BringToFront();
         }
 
         private void pricelistSettings1_Load(object sender, EventArgs e)

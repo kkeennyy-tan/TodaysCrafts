@@ -21,12 +21,18 @@ namespace Todays_Crafts
             
         }
 
+        //names of the variables to move the form
+        int mouseX = 0, mouseY = 0;
+        bool mouseDown;
+
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
             Login da = new Login();
             da.Show();
         }
+
+      
 
 
         private void purchasebtn_Click(object sender, EventArgs e)
@@ -37,6 +43,8 @@ namespace Todays_Crafts
             purchasebtn.BackColor = Color.FromArgb(147,170,255);
             infobtn.BackColor = Color.FromArgb(58, 69, 88);
             employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
         }
 
         private void inventorybtn_Click(object sender, EventArgs e)
@@ -47,6 +55,8 @@ namespace Todays_Crafts
             purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
             infobtn.BackColor = Color.FromArgb(58, 69, 88);
             employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
         }
 
         private void infobtn_Click(object sender, EventArgs e)
@@ -57,19 +67,26 @@ namespace Todays_Crafts
             purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
             infobtn.BackColor = Color.FromArgb(255,153,220);
             employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
         }
+
+        
 
         private void employeebtn_Click(object sender, EventArgs e)
         {
+            //employee
             employeecontrol2.BringToFront();
             homebtn.BackColor = Color.FromArgb(58, 69, 88);
             inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
             purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
             infobtn.BackColor = Color.FromArgb(58, 69, 88);
             employeebtn.BackColor = Color.FromArgb(213,173,255);
-            button3.BackColor = Color.FromArgb(58, 69, 88);
-            
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+
         }
+        
 
         private void homebtn_Click(object sender, EventArgs e)
         {
@@ -79,6 +96,8 @@ namespace Todays_Crafts
             purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
             infobtn.BackColor = Color.FromArgb(58, 69, 88);
             employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
         }
 
         private void employeeBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -116,6 +135,67 @@ namespace Todays_Crafts
         {
             lblTime.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
+        }
+
+        private void Dashboard_MouseMove(object sender, MouseEventArgs e)
+        {
+            //for a movable form
+            if (mouseDown)
+            {
+                mouseX = MousePosition.X - 200;
+                mouseY = MousePosition.Y - 40;
+
+                this.SetDesktopLocation(mouseX, mouseY);
+            }
+        }
+
+        private void Dashboard_MouseUp(object sender, MouseEventArgs e)
+        {
+            //for a movable form
+            mouseDown = false;
+        }
+
+        private void Dashboard_MouseDown(object sender, MouseEventArgs e)
+        {
+            //for a movable form
+            mouseDown = true;
+        }
+
+        private void joborderbtn_Click(object sender, EventArgs e)
+        {
+            //employeecontrol2.BringToFront();
+            homebtn.BackColor = Color.FromArgb(58, 69, 88);
+            inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
+            purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
+            infobtn.BackColor = Color.FromArgb(58, 69, 88);
+            employeebtn.BackColor = Color.FromArgb(213, 173, 255);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
+            //joborderbtn.BackColor = Color.FromArgb();
+        }
+
+        private void joborderbtn_Click_1(object sender, EventArgs e)
+        {
+            frmJobOrder1.BringToFront();
+            homebtn.BackColor = Color.FromArgb(58, 69, 88);
+            inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
+            purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
+            infobtn.BackColor = Color.FromArgb(58, 69, 88);
+            employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(238, 96, 138);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmSettings1.BringToFront();
+            homebtn.BackColor = Color.FromArgb(58, 69, 88);
+            inventorybtn.BackColor = Color.FromArgb(58, 69, 88);
+            purchasebtn.BackColor = Color.FromArgb(58, 69, 88);
+            infobtn.BackColor = Color.FromArgb(58, 69, 88);
+            employeebtn.BackColor = Color.FromArgb(58, 69, 88);
+            joborderbtn.BackColor = Color.FromArgb(58, 69, 88);
+            settingsbtn.BackColor = Color.FromArgb(255, 153, 220);
         }
 
         private void homecontrol2_Load(object sender, EventArgs e)

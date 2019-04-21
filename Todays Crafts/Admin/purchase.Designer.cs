@@ -91,16 +91,15 @@ namespace Todays_Crafts
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.background2 = new Todays_Crafts.Order_By.Background();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tshirt1 = new Todays_Crafts.Product.Tshirt();
             this.plate1 = new Todays_Crafts.Order_By.Plate();
             this.pen1 = new Todays_Crafts.Order_By.Pen();
             this.mug1 = new Todays_Crafts.Order_By.Mug();
             this.lanyard1 = new Todays_Crafts.Order_By.Lanyard();
             this.fan1 = new Todays_Crafts.Order_By.Fan();
-            this.tshirt1 = new Todays_Crafts.Product.Tshirt();
             this.background1 = new Todays_Crafts.Order_By.Background();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -519,6 +518,11 @@ namespace Todays_Crafts
             // comboBox7
             // 
             this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "CASH",
+            "CHEQUE",
+            "DOWN PAYMENT",
+            "COLLECTIBLES"});
             this.comboBox7.Location = new System.Drawing.Point(10, 61);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(132, 24);
@@ -569,7 +573,7 @@ namespace Todays_Crafts
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Bright", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(268, 89);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(96, 18);
@@ -731,75 +735,18 @@ namespace Todays_Crafts
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.background2);
-            this.groupBox11.Controls.Add(this.plate1);
-            this.groupBox11.Controls.Add(this.pen1);
-            this.groupBox11.Controls.Add(this.mug1);
-            this.groupBox11.Controls.Add(this.lanyard1);
-            this.groupBox11.Controls.Add(this.fan1);
-            this.groupBox11.Controls.Add(this.tshirt1);
             this.groupBox11.Controls.Add(this.background1);
+            this.groupBox11.Controls.Add(this.fan1);
+            this.groupBox11.Controls.Add(this.lanyard1);
+            this.groupBox11.Controls.Add(this.mug1);
+            this.groupBox11.Controls.Add(this.pen1);
+            this.groupBox11.Controls.Add(this.plate1);
+            this.groupBox11.Controls.Add(this.tshirt1);
             this.groupBox11.Location = new System.Drawing.Point(24, 193);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(595, 215);
             this.groupBox11.TabIndex = 17;
             this.groupBox11.TabStop = false;
-            // 
-            // background2
-            // 
-            this.background2.Location = new System.Drawing.Point(0, 4);
-            this.background2.Name = "background2";
-            this.background2.Size = new System.Drawing.Size(595, 198);
-            this.background2.TabIndex = 8;
-            // 
-            // plate1
-            // 
-            this.plate1.Location = new System.Drawing.Point(0, 8);
-            this.plate1.Name = "plate1";
-            this.plate1.Size = new System.Drawing.Size(595, 198);
-            this.plate1.TabIndex = 7;
-            // 
-            // pen1
-            // 
-            this.pen1.Location = new System.Drawing.Point(0, 8);
-            this.pen1.Name = "pen1";
-            this.pen1.Size = new System.Drawing.Size(595, 198);
-            this.pen1.TabIndex = 6;
-            // 
-            // mug1
-            // 
-            this.mug1.Location = new System.Drawing.Point(0, 8);
-            this.mug1.Name = "mug1";
-            this.mug1.Size = new System.Drawing.Size(595, 198);
-            this.mug1.TabIndex = 5;
-            // 
-            // lanyard1
-            // 
-            this.lanyard1.Location = new System.Drawing.Point(0, 8);
-            this.lanyard1.Name = "lanyard1";
-            this.lanyard1.Size = new System.Drawing.Size(583, 198);
-            this.lanyard1.TabIndex = 4;
-            // 
-            // fan1
-            // 
-            this.fan1.Location = new System.Drawing.Point(0, 8);
-            this.fan1.Name = "fan1";
-            this.fan1.Size = new System.Drawing.Size(583, 198);
-            this.fan1.TabIndex = 3;
-            // 
-            // tshirt1
-            // 
-            this.tshirt1.Location = new System.Drawing.Point(0, 8);
-            this.tshirt1.Name = "tshirt1";
-            this.tshirt1.Size = new System.Drawing.Size(583, 198);
-            this.tshirt1.TabIndex = 2;
-            // 
-            // background1
-            // 
-            this.background1.Location = new System.Drawing.Point(91, 50);
-            this.background1.Name = "background1";
-            this.background1.Size = new System.Drawing.Size(583, 198);
-            this.background1.TabIndex = 1;
             // 
             // button3
             // 
@@ -818,6 +765,56 @@ namespace Todays_Crafts
             this.pictureBox1.Size = new System.Drawing.Size(182, 152);
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            // 
+            // tshirt1
+            // 
+            this.tshirt1.AutoScroll = true;
+            this.tshirt1.Location = new System.Drawing.Point(6, 11);
+            this.tshirt1.Name = "tshirt1";
+            this.tshirt1.Size = new System.Drawing.Size(583, 198);
+            this.tshirt1.TabIndex = 0;
+            // 
+            // plate1
+            // 
+            this.plate1.Location = new System.Drawing.Point(6, 11);
+            this.plate1.Name = "plate1";
+            this.plate1.Size = new System.Drawing.Size(583, 198);
+            this.plate1.TabIndex = 1;
+            // 
+            // pen1
+            // 
+            this.pen1.Location = new System.Drawing.Point(6, 11);
+            this.pen1.Name = "pen1";
+            this.pen1.Size = new System.Drawing.Size(583, 198);
+            this.pen1.TabIndex = 2;
+            // 
+            // mug1
+            // 
+            this.mug1.Location = new System.Drawing.Point(6, 11);
+            this.mug1.Name = "mug1";
+            this.mug1.Size = new System.Drawing.Size(583, 198);
+            this.mug1.TabIndex = 3;
+            // 
+            // lanyard1
+            // 
+            this.lanyard1.Location = new System.Drawing.Point(6, 11);
+            this.lanyard1.Name = "lanyard1";
+            this.lanyard1.Size = new System.Drawing.Size(583, 198);
+            this.lanyard1.TabIndex = 4;
+            // 
+            // fan1
+            // 
+            this.fan1.Location = new System.Drawing.Point(6, 11);
+            this.fan1.Name = "fan1";
+            this.fan1.Size = new System.Drawing.Size(583, 198);
+            this.fan1.TabIndex = 5;
+            // 
+            // background1
+            // 
+            this.background1.Location = new System.Drawing.Point(6, 11);
+            this.background1.Name = "background1";
+            this.background1.Size = new System.Drawing.Size(583, 198);
+            this.background1.TabIndex = 6;
             // 
             // purchasecontrol
             // 
@@ -875,7 +872,6 @@ namespace Todays_Crafts
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblTotalAmount;
@@ -929,13 +925,13 @@ namespace Todays_Crafts
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private Order_By.Background background1;
-        private Product.Tshirt tshirt1;
-        private Order_By.Lanyard lanyard1;
         private Order_By.Fan fan1;
-        private Order_By.Background background2;
-        private Order_By.Plate plate1;
-        private Order_By.Pen pen1;
+        private Order_By.Lanyard lanyard1;
         private Order_By.Mug mug1;
+        private Order_By.Pen pen1;
+        private Order_By.Plate plate1;
+        private Product.Tshirt tshirt1;
     }
 }
